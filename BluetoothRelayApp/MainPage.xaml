@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BluetoothRelayApp.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     Activated="ToolbarItem_Activated"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Grid x:Name="ButtonGrid" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button x:Name="Button1" 
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    Text="B1" 
+                    Padding="10" 
+                    CornerRadius="10"
+                    Clicked="Button1_Clicked"/>
+
+            <Button x:Name="Button2" 
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                    Text="B2" 
+                    Padding="10" 
+                    CornerRadius="10"
+                    Clicked="Button2_Clicked"/>
+
+            <Button x:Name="Button3" 
+                    Grid.Row="1" 
+                    Grid.Column="0" 
+                    Text="B3" 
+                    Padding="10" 
+                    CornerRadius="10"
+                    Clicked="Button3_Clicked"/>
+
+            <Button x:Name="Button4" 
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    Text="B4" 
+                    Padding="10" 
+                    CornerRadius="10"
+                    Clicked="Button4_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
