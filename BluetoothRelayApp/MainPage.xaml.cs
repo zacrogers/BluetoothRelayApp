@@ -10,16 +10,9 @@ namespace BluetoothRelayApp
 {
     public partial class MainPage : ContentPage
     {
-        public IBtConnection btConnection;
         public MainPage()
         {
             InitializeComponent();
-        }
-        public MainPage(IBtConnection bt)
-        {
-            InitializeComponent();
-
-            btConnection = bt;
         }
 
         private void Button1_Clicked(object sender, EventArgs e)
@@ -44,7 +37,7 @@ namespace BluetoothRelayApp
         private void ToolbarItem_Activated(object sender, EventArgs e)
         {
             //Navigation.PushAsync(new BtSelectPage());
-            Navigation.PushAsync(new BtSelectPage(btConnection));
+            Navigation.PushAsync(new BtSelectPage());
         }
 
 

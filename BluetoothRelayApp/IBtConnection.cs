@@ -10,6 +10,7 @@ namespace BluetoothRelayApp
         void Start(string name, int sleepTime, bool readAsCharArray);
         void Cancel();
         void ConnectDevice(string deviceName);
+        void DisconnectDevice(string deviceName);
         void SendCommand(string cmd);
         ObservableCollection<string> PairedDevices();
     }

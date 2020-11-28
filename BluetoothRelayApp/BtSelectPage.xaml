@@ -6,12 +6,14 @@
         <StackLayout>
             <ListView x:Name="btDevicesListView"
                       HorizontalOptions="FillAndExpand"
-                      VerticalOptions="FillAndExpand">
+                      VerticalOptions="FillAndExpand"
+                      ItemsSource="{Binding deviceList}"
+                      ItemSelected="btDevicesListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Margin="6,4,6,4">
-                                <Label Text="{Binding .}"
+                                <Label Text="{Binding Name}"
                                        FontSize="Medium"/>
                             </StackLayout>
                         </ViewCell>
